@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'faraday'
-require 'oj'
+require "faraday"
+require "oj"
 require_relative "precious/base"
 require_relative "precious/books"
 require_relative "precious/chapters"
