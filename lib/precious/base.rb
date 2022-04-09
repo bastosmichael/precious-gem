@@ -1,21 +1,13 @@
 # frozen_string_literal: true
 
 module Precious
-  class Books
+  class Base
     API_ENDPOINT = "https://the-one-api.dev/v2/"
 
     attr_reader :api_key
 
     def initialize(api_key = nil)
       @api_key = api_key
-    end
-
-    # GET https://the-one-api.dev/v2/book
-    def get_books
-      request(
-        http_method: :get,
-        endpoint: "book"
-      )
     end
 
     private
