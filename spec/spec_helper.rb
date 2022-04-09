@@ -3,9 +3,12 @@
 require "precious"
 require "vcr"
 
+API_KEY = ''
+
 VCR.configure do |c|
   c.cassette_library_dir = "spec/vcr"
   c.hook_into :webmock
+  c.filter_sensitive_data('<APIKEY>') { API_KEY }
 end
 
 RSpec.configure do |config|

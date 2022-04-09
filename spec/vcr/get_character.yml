@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/character?_id=5cdbe73516d496d2c2940848
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <APIKEY>
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 09 Apr 2022 23:51:28 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '98'
+      X-Ratelimit-Reset:
+      - '1649548767'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '286'
+      Etag:
+      - W/"11e-Vjfm7KGIn61jMMq6bNlxMJylJy8"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkb2NzIjpbeyJfaWQiOiI1Y2RiZTczNTE2ZDQ5NmQyYzI5NDA4NDgiLCJiaXJ0aCI6IiIsImRlYXRoIjoiIiwiaGFpciI6IiIsImdlbmRlciI6Ik1hbGUiLCJoZWlnaHQiOiIiLCJyZWFsbSI6IlJvaGFuIiwic3BvdXNlIjoiIiwibmFtZSI6IsOJb3RoYWluIiwicmFjZSI6Ikh1bWFuIiwid2lraVVybCI6Imh0dHA6Ly9sb3RyLndpa2lhLmNvbS8vd2lraS/DiW90aGFpbl8oZmlsbV9jaGFyYWN0ZXIpdCJ9XSwidG90YWwiOjEsImxpbWl0IjoxMDAwLCJvZmZzZXQiOjAsInBhZ2UiOjEsInBhZ2VzIjoxfQ==
+    http_version:
+  recorded_at: Sat, 09 Apr 2022 23:51:28 GMT
+recorded_with: VCR 3.0.3
