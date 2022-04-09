@@ -24,7 +24,7 @@ module Precious
         def get_book_chapters(id)
           request(
             http_method: :get,
-            endpoint: "book/#{id}/chapters"
+            endpoint: "book/#{id}/chapter"
           )
         end
       end
