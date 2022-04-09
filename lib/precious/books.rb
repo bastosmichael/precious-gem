@@ -1,36 +1,32 @@
 # frozen_string_literal: true
 
 module Precious
-  class Books
-    API_ENDPOINT = "https://the-one-api.dev/v2/"
+  module API
+    module V2
+      class Books < Base
+        # GET https://the-one-api.dev/v2/book
+        def get_books
+          request(
+            http_method: :get,
+            endpoint: "book"
+          )
+        end
 
-    attr_reader :api_key
+        # GET https://the-one-api.dev/v2/book/{id}
+        def get_book(id)
+          request(
+            http_method: :get,
+            endpoint: "book/#{id}"
+          )
+        end
 
-    def initialize(api_key = nil)
-      @api_key = api_key
-    end
-
-    # GET https://the-one-api.dev/v2/book
-    def get_books
-      request(
-        http_method: :get,
-        endpoint: "book"
-      )
-    end
-
-    private
-
-    def request(http_method:, endpoint:, params: {})
-      response = client.public_send(http_method, endpoint, params)
-      Oj.load(response.body)
-    end
-
-    def client
-      @_client ||= Faraday.new(API_ENDPOINT) do |client|
-        client.request :url_encoded
-        client.adapter Faraday.default_adapter
-        client.headers["Content-Type"] = "application/json"
-        client.headers["Authorization"] = "Bearer #{api_key}" unless api_key&.nil?
+        # GET https://the-one-api.dev/v2/book/{id}/chapters
+        def get_book_chapters(id)
+          request(
+            http_method: :get,
+            endpoint: "book/#{id}/chapters"
+          )
+        end
       end
     end
   end

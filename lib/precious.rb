@@ -2,6 +2,7 @@
 
 require 'faraday'
 require 'oj'
+require_relative "precious/base"
 require_relative "precious/books"
 require_relative "precious/chapters"
 require_relative "precious/characters"
