@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/book/5cf5805fb53e011a64671582/chapter
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 09 Apr 2022 23:19:58 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1649546967'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1653'
+      Etag:
+      - W/"675-iXg80ZsIdvczXhUXR6iRuH0S8jY"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkb2NzIjpbeyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOGIiLCJjaGFwdGVyTmFtZSI6IkEgTG9uZy1leHBlY3RlZCBQYXJ0eSJ9LHsiX2lkIjoiNjA5MWI2ZDZkNTgzNjBmOTg4MTMzYjhjIiwiY2hhcHRlck5hbWUiOiJUaGUgU2hhZG93IG9mIHRoZSBQYXN0In0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOGQiLCJjaGFwdGVyTmFtZSI6IlRocmVlIGlzIENvbXBhbnkifSx7Il9pZCI6IjYwOTFiNmQ2ZDU4MzYwZjk4ODEzM2I4ZSIsImNoYXB0ZXJOYW1lIjoiQSBTaG9ydCBDdXQgdG8gTXVzaHJvb21zIn0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOGYiLCJjaGFwdGVyTmFtZSI6IkEgQ29uc3BpcmFjeSBVbm1hc2tlZCJ9LHsiX2lkIjoiNjA5MWI2ZDZkNTgzNjBmOTg4MTMzYjkwIiwiY2hhcHRlck5hbWUiOiJUaGUgT2xkIEZvcmVzdCJ9LHsiX2lkIjoiNjA5MWI2ZDZkNTgzNjBmOTg4MTMzYjkxIiwiY2hhcHRlck5hbWUiOiJJbiB0aGUgSG91c2Ugb2YgVG9tIEJvbWJhZGlsIn0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOTIiLCJjaGFwdGVyTmFtZSI6IkZvZyBvbiB0aGUgQmFycm93LURvd25zIn0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOTMiLCJjaGFwdGVyTmFtZSI6IkF0IHRoZSBTaWduIG9mIFRoZSBQcmFuY2luZyBQb255In0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOTQiLCJjaGFwdGVyTmFtZSI6IlN0cmlkZXIifSx7Il9pZCI6IjYwOTFiNmQ2ZDU4MzYwZjk4ODEzM2I5NSIsImNoYXB0ZXJOYW1lIjoiQSBLbmlmZSBpbiB0aGUgRGFyayJ9LHsiX2lkIjoiNjA5MWI2ZDZkNTgzNjBmOTg4MTMzYjk2IiwiY2hhcHRlck5hbWUiOiJGbGlnaHQgdG8gdGhlIEZvcmQifSx7Il9pZCI6IjYwOTFiNmQ2ZDU4MzYwZjk4ODEzM2I5NyIsImNoYXB0ZXJOYW1lIjoiTWFueSBNZWV0aW5ncyJ9LHsiX2lkIjoiNjA5MWI2ZDZkNTgzNjBmOTg4MTMzYjk4IiwiY2hhcHRlck5hbWUiOiJUaGUgQ291bmNpbCBvZiBFbHJvbmQifSx7Il9pZCI6IjYwOTFiNmQ2ZDU4MzYwZjk4ODEzM2I5OSIsImNoYXB0ZXJOYW1lIjoiVGhlIFJpbmcgR29lcyBTb3V0aCJ9LHsiX2lkIjoiNjA5MWI2ZDZkNTgzNjBmOTg4MTMzYjlhIiwiY2hhcHRlck5hbWUiOiJBIEpvdXJuZXkgaW4gdGhlIERhcmsifSx7Il9pZCI6IjYwOTFiNmQ2ZDU4MzYwZjk4ODEzM2I5YiIsImNoYXB0ZXJOYW1lIjoiVGhlIEJyaWRnZSBvZiBLaGF6YWQtZHXMgm0ifSx7Il9pZCI6IjYwOTFiNmQ2ZDU4MzYwZjk4ODEzM2I5YyIsImNoYXB0ZXJOYW1lIjoiTG90aGxvzIFyaWVuIn0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOWQiLCJjaGFwdGVyTmFtZSI6IlRoZSBNaXJyb3Igb2YgR2FsYWRyaWVsIn0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOWUiLCJjaGFwdGVyTmFtZSI6IkZhcmV3ZWxsIHRvIExvzIFyaWVuIn0seyJfaWQiOiI2MDkxYjZkNmQ1ODM2MGY5ODgxMzNiOWYiLCJjaGFwdGVyTmFtZSI6IlRoZSBHcmVhdCBSaXZlciJ9LHsiX2lkIjoiNjA5MWI2ZDZkNTgzNjBmOTg4MTMzYmEwIiwiY2hhcHRlck5hbWUiOiJUaGUgQnJlYWtpbmcgb2YgdGhlIEZlbGxvd3NoaXAifV0sInRvdGFsIjoyMiwibGltaXQiOjEwMDAsIm9mZnNldCI6MCwicGFnZSI6MSwicGFnZXMiOjF9
+    http_version:
+  recorded_at: Sat, 09 Apr 2022 23:19:58 GMT
+recorded_with: VCR 3.0.3

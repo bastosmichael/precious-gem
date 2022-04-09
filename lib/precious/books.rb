@@ -6,13 +6,8 @@ module Precious
       class Books < Base
         # GET https://the-one-api.dev/v2/book
         def get_books(limit: 0, page: 0, offset: 0)
-          params = {
-            limit: limit
-          }
+          params = set_params(limit: limit, page: page, offset: offset)
 
-          params.merge(page: page) if page > 0
-          params.merge(offset: offset) if offset > 0
-          
           request(
             http_method: :get,
             endpoint: "book",
@@ -35,13 +30,7 @@ module Precious
 
         # GET https://the-one-api.dev/v2/book/{id}/chapters
         def get_book_chapters(id:, limit: 0, page: 0, offset: 0)
-          params = {
-            _id: id
-          }
-
-          params = params.merge(limit: limit) if limit > 0
-          params = params.merge(page: page) if page > 0
-          params = params.merge(offset: offset) if offset > 0
+          params = set_params(limit: limit, page: page, offset: offset)
 
           request(
             http_method: :get,

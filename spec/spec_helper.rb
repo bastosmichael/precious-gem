@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 require "precious"
+require "vcr"
+
+VCR.configure do |c|
+  c.cassette_library_dir = "spec/vcr"
+  c.hook_into :webmock
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

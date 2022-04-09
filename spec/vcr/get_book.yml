@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the-one-api.dev/v2/book?_id=5cf5805fb53e011a64671582
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 09 Apr 2022 23:05:32 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Content-Security-Policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      X-Dns-Prefetch-Control:
+      - 'off'
+      Expect-Ct:
+      - max-age=0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '98'
+      X-Ratelimit-Reset:
+      - '1649545767'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '134'
+      Etag:
+      - W/"86-I7v5qLZewBm6kqSZlRMWqSKHi1k"
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"_id":"5cf5805fb53e011a64671582","name":"The Fellowship Of
+        The Ring"}],"total":1,"limit":1000,"offset":0,"page":1,"pages":1}'
+    http_version:
+  recorded_at: Sat, 09 Apr 2022 23:05:32 GMT
+recorded_with: VCR 3.0.3

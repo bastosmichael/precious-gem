@@ -20,12 +20,20 @@ module Precious
         end
 
         def client
-          @_client ||= Faraday.new(API_ENDPOINT) do |client|
+          Faraday.new(API_ENDPOINT) do |client|
             client.request :url_encoded
             client.adapter Faraday.default_adapter
             client.headers["Content-Type"] = "application/json"
             client.headers["Authorization"] = "Bearer #{api_key}" unless api_key&.nil?
           end
+        end
+
+        def set_params(limit:, page:, offset:)
+          params = {}
+          params = params.merge(limit: limit) if limit > 0
+          params = params.merge(page: page) if page > 0
+          params = params.merge(offset: offset) if offset > 0
+          params
         end
       end
     end
