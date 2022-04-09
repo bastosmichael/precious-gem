@@ -4,7 +4,6 @@ module Precious
   module API
     module V2
       class Characters
-        
       end
     end
   end
