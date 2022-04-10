@@ -30,9 +30,9 @@ module Precious
 
         def set_params(limit:, page:, offset:)
           params = {}
-          params = params.merge(limit: limit) if limit > 0
-          params = params.merge(page: page) if page > 0
-          params = params.merge(offset: offset) if offset > 0
+          params = params.merge(limit: limit) if limit.positive?
+          params = params.merge(page: page) if page.positive?
+          params = params.merge(offset: offset) if offset.positive?
           params
         end
       end
