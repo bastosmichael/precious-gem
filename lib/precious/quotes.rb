@@ -10,7 +10,7 @@ module Precious
 
           request(
             http_method: :get,
-            endpoint: "character",
+            endpoint: "quote",
             params: params
           )
         end
