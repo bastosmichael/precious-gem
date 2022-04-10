@@ -3,7 +3,7 @@
 require_relative "lib/precious/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "precious"
+  spec.name = "precious-sdk"
   spec.version = Precious::VERSION
   spec.authors = ["Michael Bastos"]
   spec.email = ["bastosmichael@gmail.com"]
