@@ -22,7 +22,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Making sure you first require the gem in your code or console
+
+```
+require 'precious'
+```
+
+An Example of fetching books without an API key
+
+```
+books = Precious::API::V2::Books.new
+
+books.get_books
+```
+
+An Example of fetching movies with an API key
+```
+movies = Precious::API::V2::Movies.new(API_KEY)
+
+movies.get_movies
+```
+
+An Example of fetching character quotes with an API key
+```
+characters = Precious::API::V2::Characters.new(API_KEY)
+
+characters.get_character_quotes(id: '5cdbe73516d496d2c2940848')
+```
 
 ## Development
 
